@@ -1,0 +1,13 @@
+{
+  "name": "Test",
+  "featured": false,
+  "expirationDate": null,
+  "itemsInStock": 0,
+  "receiptDate": null,
+  "rating": 5.0,
+  "brand": {
+    "id": 4,
+    "name": "Bordeaux",
+    "country": "France"
+  }
+}

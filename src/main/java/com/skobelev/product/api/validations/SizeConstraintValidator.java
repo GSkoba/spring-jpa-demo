@@ -10,6 +10,6 @@ public class SizeConstraintValidator implements ConstraintValidator<SizeConstrai
 
     @Override
     public boolean isValid(Set<Category> value, ConstraintValidatorContext context) {
-        return value.size() > 1 && value.size() <= 5;
+        return value != null && value.size() >= 1 && value.size() <= 5;
     }
 }

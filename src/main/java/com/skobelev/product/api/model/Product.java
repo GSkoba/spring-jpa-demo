@@ -59,7 +59,7 @@ public class Product {
     @Column(name = "RATING")
     private double rating;
 
-    @ManyToOne(targetEntity = Brand.class, cascade = CascadeType.ALL)
+    @ManyToOne
     @JoinColumn(name = "BRANDID", foreignKey = @ForeignKey(name = "fk_brand"))
     private Brand brand;
 

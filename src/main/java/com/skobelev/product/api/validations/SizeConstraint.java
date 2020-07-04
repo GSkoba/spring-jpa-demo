@@ -8,7 +8,7 @@ import java.lang.annotation.RetentionPolicy;
 @Constraint(validatedBy = SizeConstraintValidator.class)
 @Retention(RetentionPolicy.RUNTIME)
 public @interface SizeConstraint {
-    String message() default "The input list cannot contain more than 4 movies.";
+    String message() default "The input list cannot contain less than 1 item";
     Class<?>[] groups() default {};
     Class<? extends Payload>[] payload() default {};
 }
